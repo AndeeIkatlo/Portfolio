@@ -23,6 +23,8 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -50,7 +52,7 @@
         <h1 class="text-light"><a href="index.html">Andrei Emmanuel Ilao</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://www.facebook.com/andrei.ilao.3/" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/andee_aranda/" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.facebook.com/andrei.ilao.3/" class="instagram"><i class="bx bxl-instagram"></i></a>
           <a href="https://www.linkedin.com/in/andrei-emmanuel-ilao-9ba020285/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
       </div>
@@ -83,7 +85,7 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p>I'am Andrei Emmanuel Ilao. I am 20 years old and currently a third-year student at Batangas State University, pursuing a Bachelor of Science in Information Technology. I aspire to become a penetration tester.</p>
+          <p>I'am Andrei Emmanuel Ilao. I am 20 years old and currently a third-year student at Batangas State University, pursuing a Bachelor of Science in Information Technology. I aspire to become a Web-Developer & Penetration tester.</p>
         </div>
 
         <div class="row">
@@ -99,6 +101,7 @@
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>16 December 2003</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+63 9466132384</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Philippines, Batangas Sanjose</span></li>
                 </ul>
@@ -106,7 +109,7 @@
               <div class="col-lg-6">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>20</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>N/A</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor of Science in Information Technology</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                 </ul>
               </div>
@@ -193,7 +196,13 @@
 
         <div class="section-title">
           <h2>Projects</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <div class="card" style="width: 18rem;"> 
+            <div class="card-body">
+              <h5 class="card-title">E-commerce System(Python)</h5>
+              <p class="card-text">The E-commerce System in Python is a robust platform designed to facilitate online transactions.</p>
+              <a href="#" class="btn btn-primary" id="downloadBtn">Download</a> 
+            </div>
+          </div>
         </div>
       </section>  
     <!-- ======= Resume Section ======= -->
@@ -208,7 +217,7 @@
             <h3 class="resume-title">Sumary</h3>
             <div class="resume-item pb-0">
               <h4>Andrei Emmanuel Ilao</h4>
-              <p><em>I'am Andrei Emmanuel Ilao. I am 20 years old and currently a third-year student at Batangas State University, pursuing a Bachelor of Science in Information Technology. I aspire to become a penetration tester.</em></p>
+              <p><em>I'am Andrei Emmanuel Ilao. I am 20 years old and currently a third-year student at Batangas State University, pursuing a Bachelor of Science in Information Technology. I aspire to become a Web-Developer & Penetration tester.</em></p>
               <ul>
                 <li>Batangas, Sanjose Taysan</li>
                 <li>(63) 946-6132-384</li>
@@ -253,7 +262,7 @@
 
         <div class="row" data-aos="fade-in">
 
-          <div class="col-lg-8 d-flex align-items-stretch">
+          <div class="col-lg-9 d-flex align-items-stretch">
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
@@ -274,11 +283,43 @@
               </div>
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7746.603337747351!2d121.0938620454333!3d13.8809018116415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd1241fd20f177%3A0x48be69b3c9b8f1b8!2sTaysan%2C%20San%20Jose%2C%20Batangas!5e0!3m2!1sen!2sph!4v1715992075529!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-
       </div>
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
+  <script>
+    document.getElementById('downloadBtn').addEventListener('click', function() {
+        const pythonCode = `
+# E-commerce System
+def main():
+    print("Welcome to the E-commerce System")
+    
+if __name__ == "__main__":
+    main()
+        `;
+
+        // Create a new instance of JSZip
+        const zip = new JSZip();
+
+        // Create the directory and add the Python file
+        zip.folder("E-commerce").file("main.py", pythonCode);
+
+        // Generate the zip file and trigger the download
+        zip.generateAsync({ type: "blob" })
+            .then(function(content) {
+                // Create a link element
+                const link = document.createElement('a');
+                // Set the download attribute with a filename
+                link.download = 'e-commerce.zip';
+                // Create an object URL for the Blob
+                link.href = URL.createObjectURL(content);
+                // Programmatically click the link to trigger the download
+                link.click();
+                // Clean up the object URL
+                URL.revokeObjectURL(link.href);
+            });
+    });
+</script>
 
 
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
